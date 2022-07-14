@@ -22,7 +22,7 @@ const Auth = () => {
   };
   const sendRequest = async (type = "login") => {
     const res = await axios
-      .post(`https://yourstruly-backend.herokuapp.com/user/${type}`, {
+      .post(`https://yourstruly-backend.herokuapp.com/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,
