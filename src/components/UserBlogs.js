@@ -6,7 +6,7 @@ const UserBlogs = () => {
   const id = localStorage.getItem("userId");
   const sendRequest = async () => {
     const res = await axios
-      .get(`https://yourstruly-backend.herokuapp.com/api/blog/api/blog/user/${id}`)
+      .get(`https://yourstruly-backend.herokuapp.com/api/blog/user/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
